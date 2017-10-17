@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Udoka Nwosu</title>
-    <link>http://mikemane.github.io/</link>
+    <link>https://mikemane.github.io/</link>
     <description>Recent content on Udoka Nwosu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Oct 2017 23:15:37 +0100</lastBuildDate>
     
-	<atom:link href="http://mikemane.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mikemane.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://mikemane.github.io/about/</link>
+      <link>https://mikemane.github.io/about/</link>
       <pubDate>Tue, 17 Oct 2017 23:15:37 +0100</pubDate>
       
-      <guid>http://mikemane.github.io/about/</guid>
+      <guid>https://mikemane.github.io/about/</guid>
       <description>My name is Udoka Nwosu, I just finished a masters in Artificial Intelligence. Formerly an Intructor @Kingston University and a founder of @Chillville.</description>
     </item>
     
