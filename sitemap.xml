@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mikemane.github.io/photography/st-andrews/</loc>
+    <lastmod>2017-10-23T11:39:25+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mikemane.github.io/about/</loc>
     <lastmod>2017-10-17T23:15:37+01:00</lastmod>
   </url>
@@ -12,13 +17,19 @@
   </url>
   
   <url>
+    <loc>https://mikemane.github.io/photography/</loc>
+    <lastmod>2017-10-23T11:39:25+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mikemane.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mikemane.github.io/</loc>
-    <lastmod>2017-10-17T23:15:37+01:00</lastmod>
+    <lastmod>2017-10-23T11:39:25+01:00</lastmod>
     <priority>0</priority>
   </url>
   
