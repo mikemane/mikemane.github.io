@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Udoka Nwosu</title>
+    <link>https://mikemane.github.io/blog/</link>
+    <description>Recent content in Blogs on Udoka Nwosu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 23 Oct 2017 21:37:25 +0100</lastBuildDate>
+    
+	<atom:link href="https://mikemane.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fall Books</title>
+      <link>https://mikemane.github.io/blog/fall-books/</link>
+      <pubDate>Mon, 23 Oct 2017 21:37:25 +0100</pubDate>
+      
+      <guid>https://mikemane.github.io/blog/fall-books/</guid>
+      <description>Books for the fall Here are a list of books I am currently intersted in this fall, this are to help me understand concept I sometimes struggle to understand.
+Being passionate about learning, I like to keep myself updated with the latest trends in computer science. This could be improvement in a certain aspect of a specific programming language or something covering the current state of the art research.</description>
+    </item>
+    
+  </channel>
+</rss>
