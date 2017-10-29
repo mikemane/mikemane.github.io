@@ -21,7 +21,7 @@ a:link
 }
 body
 {
-    font-family: 'Old Standard TT', 'Roboto Slab', 'Roboto', 'Lato', sans-serif;
+    font-family: 'Source Sans Pro', 'Roboto Slab', 'Roboto', 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 400;
 
@@ -52,7 +52,7 @@ html
 .author h6,
 .author p
 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', 'Roboto Slab', serif;
 }
 .category
 {
@@ -72,7 +72,7 @@ html
 }
 div.content
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro','Roboto', sans-serif;
     font-size: 18px;
     font-weight: 300;
 
@@ -86,7 +86,7 @@ div.content
 }
 .description
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', 'Roboto', sans-serif;
     font-weight: 200;
     color: #bbb;
 }
@@ -140,7 +140,7 @@ div.content
 }
 .intro
 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', 'Roboto Slab', serif;
     font-weight: 200;
     color: #777;
 }
@@ -160,7 +160,7 @@ h3.intro
 }
 .list-entry
 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', 'Roboto Slab', serif;
     font-size: 25px;
     font-weight: 400;
 
@@ -212,7 +212,7 @@ h6.meta
     color: #bbb;
 }
 section.meta {
-    margin-top: 
+    margin-top: 0px;
 }
 .powered
 {
@@ -231,7 +231,7 @@ section.meta {
 }
 .title
 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', 'Roboto Slab', serif;
     font-weight: 400;
 
     color: #555;
