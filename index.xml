@@ -2,32 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Udoka Nwosu</title>
-    <link>https://unwosu.github.io/</link>
+    <link>https://unwosu.github.com/</link>
     <description>Recent content on Udoka Nwosu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 23 Oct 2017 11:39:25 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2018 13:05:48 +0000</lastBuildDate>
     
-	<atom:link href="https://unwosu.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://unwosu.github.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>St Andrews</title>
-      <link>https://unwosu.github.io/photography/st-andrews/</link>
-      <pubDate>Mon, 23 Oct 2017 11:39:25 +0100</pubDate>
+      <title>First Post</title>
+      <link>https://unwosu.github.com/blog/first/</link>
+      <pubDate>Fri, 02 Feb 2018 13:05:48 +0000</pubDate>
       
-      <guid>https://unwosu.github.io/photography/st-andrews/</guid>
-      <description>St Andrews is a unique city in Scotland and more or less the world. This place has a lot of color and unique personalities. I enjoyed my time in this place as it embraces the idea of learning. The people here are amazing with distinct and creative personlities, a multicultural avenue that opens up your mind to different parts of the world through the eyes of others and I enjoyed being there learning alot about Artificial Intelligence and also the people.</description>
+      <guid>https://unwosu.github.com/blog/first/</guid>
+      <description>As I have officially decided to create a blog, I am looking to share some of my ideas with the world. This involves topics about music, philosophy, computer science and software engineering. There is a lot to learn, So let us get started.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://unwosu.github.io/about/</link>
-      <pubDate>Tue, 17 Oct 2017 23:15:37 +0100</pubDate>
+      <link>https://unwosu.github.com/about/</link>
+      <pubDate>Fri, 02 Feb 2018 12:53:40 +0000</pubDate>
       
-      <guid>https://unwosu.github.io/about/</guid>
-      <description> My name is Udoka Nwosu, Masters of Artificial Intelligence, Software Engineer, passionate about bringing phenomenal and effective products into this world. Master of Artificial Intelligence. Formerly an Instructor @kingston University and engineer @limitless.
-Resume </description>
+      <guid>https://unwosu.github.com/about/</guid>
+      <description>I am a recent graduate from the university of St Andrews doing studying Artificial Intelligence. From the degree I learnt a lot about traditional AI systems which involves search, logic as well as probability. I also learnt a lot about machine learning and deep learning architectures which include Convolutional, Recurrent Neural netowrk and GANS. I also picked up a course in Distributed and Data intensive Systems. Some of the topics covered includes replication and consensus algorithms.</description>
     </item>
     
   </channel>
