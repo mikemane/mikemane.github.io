@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Udoka Nwosu</title>
-    <link>https://mikemane.github.io/</link>
+    <link>https://unwosu.github.io/</link>
     <description>Recent content on Udoka Nwosu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
@@ -13,7 +13,7 @@
     
     <item>
       <title>St Andrews</title>
-      <link>https://mikemane.github.io/photography/st-andrews/</link>
+      <link>https://unwosu.github.io/photography/st-andrews/</link>
       <pubDate>Mon, 23 Oct 2017 11:39:25 +0100</pubDate>
       
       <guid>https://mikemane.github.io/photography/st-andrews/</guid>
@@ -22,7 +22,7 @@
     
     <item>
       <title>About</title>
-      <link>https://mikemane.github.io/about/</link>
+      <link>https://unwosu.github.io/about/</link>
       <pubDate>Tue, 17 Oct 2017 23:15:37 +0100</pubDate>
       
       <guid>https://mikemane.github.io/about/</guid>
