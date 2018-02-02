@@ -17,7 +17,7 @@
       <pubDate>Fri, 02 Feb 2018 13:05:48 +0000</pubDate>
       
       <guid>https://unwosu.github.com/blog/first/</guid>
-      <description>As I have officially decided to create a blog, I am looking to share some of my ideas with the world. This involves topics about music, philosophy, computer science and software engineering. There is a lot to learn, So let us get started.</description>
+      <description>As I have officially decided to create a blog, I am looking to share some of my ideas with the world. This involves topics about music, philosophy, computer science and software engineering. There is a lot to learn, so let us get started.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Fri, 02 Feb 2018 12:53:40 +0000</pubDate>
       
       <guid>https://unwosu.github.com/about/</guid>
-      <description>I am a recent graduate from the university of St Andrews doing studying Artificial Intelligence. From the degree I learnt a lot about traditional AI systems which involves search, logic as well as probability. I also learnt a lot about machine learning and deep learning architectures which include Convolutional, Recurrent Neural netowrk and GANS. I also picked up a course in Distributed and Data intensive Systems. Some of the topics covered includes replication and consensus algorithms.</description>
+      <description>I am a recent graduate from the university of St Andrews where I studied Artificial Intelligence. From the degree I learnt a lot about traditional AI systems which involves search, logic as well as probability. I also learnt a lot about machine learning and deep learning architectures which include convolutional, recurrent and generative adversarial neural networks. I also picked up a course in Distributed and Data intensive Systems where I convered topics that has to do with several operating and distributed architectures.</description>
     </item>
     
   </channel>
