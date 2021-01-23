@@ -1,125 +1,95 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <style>
+body {
+    background-color:rgb(28, 33, 38);
+}
+        </style>
+    </head>
+    <body>
+        <div id="grid" style="margin: 30px;">
+        </div>
+        <script>
+            function dayOfYear() {
+                var now = new Date();
+                var start = new Date(now.getFullYear(), 0, 0);
+                var diff = now - start;
+                var oneDay = 1000 * 60 * 60 * 24;
+                var day = Math.floor(diff / oneDay);
+                return day
+            }
+function gridData() {
+    var data = new Array();
+    var xpos = 1; //starting xpos and ypos at 1 so the stroke will show when we make the grid below
+    var ypos = 1;
+    var width = 6;
+    var height = 6;
+    var click = 0;
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    var birthyear = 1994
+    var now = new Date()
+    const year = now.getYear() + 1900
+    const yearsToNow = year - birthyear
+    const doy = dayOfYear()
+    console.log(year)
+    // iterate for rows	
+    for (var row = 0; row < 90; row++) {
+        data.push( new Array() );
 
-<meta name="description" content="Simple minimalist theme">
-<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+        // iterate for cells/columns inside rows
+        for (var column = 0; column < 52; column++) {
+            data[row].push({
+                x: xpos,
+                y: ypos,
+                width: width,
+                height: height,
+                filled: row < yearsToNow || (row == yearsToNow && column < (doy / 7)),
+                accent: row == yearsToNow && column == Math.floor(doy / 7)
+            })
+            // increment the x position. I.e. move it over by 50 (width variable)
+            xpos += width+3;
+        }
+        // reset the x position after a row is complete
+        xpos = 1;
+        // increment the y position for the next row. Move it down 50 (height variable)
+        ypos += height+3;	
+        if (row % 10 == 9) {
+            ypos += 3
+        }
+    }
+    return data;
+}
 
-<base href="https://unwosu.github.com">
+var gridData = gridData();	
+// I like to log the data to the console for quick debugging
+console.log(gridData);
 
-<title>Udoka Nwosu</title>
+var grid = d3.select("#grid")
+    .append("svg")
+    .attr("width","480px")
+    .attr("height","1000px")
+    .attr("style", "margin: 0 auto; display: block;")
 
-<meta name="generator" content="Hugo 0.35" />
+var row = grid.selectAll(".row")
+    .data(gridData)
+    .enter().append("g")
+    .attr("class", "row");
 
-
-  <link href="https://unwosu.github.com/index.xml" rel="alternate" type="application/rss+xml" title="Udoka Nwosu" />
-  <link href="https://unwosu.github.com/index.xml" rel="feed" type="application/rss+xml" title="Udoka Nwosu" />
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://unwosu.github.com/css/main.css">
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
-
-</head>
-<body lang="en-US">
-<div class="container">
-
-
-<header class="row text-center header">
-   <img src="/img/me.jpg" alt="Author Image" class="img-circle text-center headshot"> 
-  <h1 class="author">Udoka Nwosu</h1>
-</header>
-
-
-<section id="info-pane" class="row text-center info">
-  
-  <h3 class="intro">Software Engineer</h3>
-  
-  
-  <h4 class="description">Now @standrews. Previously @chillville, @limitless. <br/> &ldquo;Interested in intelligent, automated and scalable software systems&rdquo;</h4>
-  
-</section>
-
-
-<section id="social-pane" class="row text-center social">
-  
-  
-  
-  
-  <a href="https://github.com/unwosu"><i class="fa fa-github" aria-hidden="true"></i></a>
-  
-  
-  
-  <a href="https://linkedin.com/in/udoka-nwosu"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-  
-  
-  <a href="https://stackoverflow.com/users/unwosu"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-  
-  
-  
-  
-  
-  <a href="mailto:unwosu@tuta.io"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-  
-  
-</section>
-
-
-<section id="main-menu-pane" class="row text-center main-menu">
-  
-  <h4><a class="menu-item" href="/blog/">blog</a></h4>
-  
-  <h4><a class="menu-item" href="/about/">about</a></h4>
-  
-</section>
-
-
-
-<footer class="row text-center footer">
-  <hr />
-  
-  <h6 class="text-center copyright">© 2016. Udoka Nwosu. <a href="http://creativecommons.org/licenses/by/3.0/">Some Rights Reserved</a>.</h6>
-  
-  
-</footer>
-
-</div>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-
-<script type="text/javascript">
-hljs.initHighlightingOnLoad();
-</script>
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-</body>
+var column = row.selectAll(".square")
+    .data(function(d) { return d; })
+    .enter().append("rect")
+    .attr("class","square")
+    .attr("x", function(d) { return d.x; })
+    .attr("y", function(d) { return d.y; })
+    .attr("width", function(d) { return d.width; })
+    .attr("height", function(d) { return d.height; })
+    .style("fill", function(d) { return d.accent ? "#fff" : "#eee"})
+    .style("opacity", function(d) { return d.accent ? "1.0" : (d.filled ? "0.5" : "0.2")})
+    .on('click', function(d) {
+        d.filled = !d.filled
+        d3.select(this).style("fill",d.filled ? "#444" : "#eee");
+    });
+        </script>
+    </body>
 </html>
-
